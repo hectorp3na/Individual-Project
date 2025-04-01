@@ -4,9 +4,10 @@
     font-family: sans-serif;
     margin: 0;
     box-sizing: border-box;
+    background-color: #FFF;
 }
 
-h1 {
+.title{
     font-size: 50px;
     text-align: left;
     max-width: 730px;
@@ -28,6 +29,22 @@ h1 {
 }
 
 .logo {
-    height: 40px;
-    width: 150px;
+    height: 5px;
+    width: 5px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between
+}
+
+.navlinks {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
 }
