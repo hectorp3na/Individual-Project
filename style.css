@@ -18,25 +18,63 @@
     display: block;
 }
 
-
-
-.logo {
-    height: 5px;
-    width: 5px;
+.logo img {
+    height: 40px;
+    width: auto;
 }
 
 
 .navbar {
     display: flex;
-    justify-content: space-between
-}
-
-.navlinks {
-    width: 25%;
-    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 1 rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-li {
+.navlinks li {
     list-style: none;
+    cursor: pointer;
+    padding: 0 15px;
+    font-weight: 500;
+}
+
+.navlinks li:hover { 
+    color: #6030b1;
+}
+
+.input-wrapper {
+    display: flex;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.input-wrapper input {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.input-wrapper button {
+    padding: 10px 15px;
+    background-color: #6030b1;
+    color: white;
+    border: none;
+    border-radius: 0 4px 0;
+    cursor: pointer;
+}
+
+.input-wrapper button i {
+    background-color: transparent;
+}
+
+.movie--cut-board img {
+    height: 300px;
+    
+
+    
+
 }
