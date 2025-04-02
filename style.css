@@ -81,7 +81,7 @@
     background-color: #6030b1;
     color: white;
     border: none;
-    border-radius: 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
     cursor: pointer;
     font-size: 24px;
 }
@@ -117,7 +117,7 @@ li.btn-contact {
 
 USER.HTML (SECOND PAGE)
 */
-
+/* 
 .cinema-img {
     background-repeat: no-repeat;
     background-position: 50%;
@@ -151,4 +151,96 @@ USER.HTML (SECOND PAGE)
     height: 60px;
     font-size: 20px;
     padding-left: 20px;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navlinks li {
+    display: inline-block;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navlinks a.active {
+    color: #6030b1;
+}
+
+.navlinks a:hover {
+    color: #6030b1;
+}
+
+/* Search Section */
+.second-page {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.input-wrapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.input-search {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #6030b1;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-btn {
+    background: #6030b1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background: #4a1f91;
+}
+
+/* Background Image */
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.cinema-img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
 }
