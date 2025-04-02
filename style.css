@@ -170,6 +170,7 @@ body {
 .second-page {
     text-align: center;
     padding: 50px 20px;
+    background: url('./assests/myke-simon-atsUqIm3wxo-unsplash.jpg');
 }
 
 .input-wrapp {
@@ -255,3 +256,4 @@ body {
    color: #6415ff;
    cursor: pointer;
    }
+
