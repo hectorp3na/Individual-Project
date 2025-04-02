@@ -139,6 +139,7 @@ body {
     top: 0;
     left: 0;
     z-index: 10;
+    background: url('./assests/myke-simon-atsUqIm3wxo-unsplash.jpg');
 }
 
 .navlinks {
@@ -171,6 +172,7 @@ body {
     text-align: center;
     padding: 50px 20px;
     background: url('./assests/myke-simon-atsUqIm3wxo-unsplash.jpg');
+
 }
 
 .input-wrapp {
