@@ -71,27 +71,27 @@
 .input-wrapper input {
     padding: 10px 15px;
     border: 1px solid #ddd;
-    border-radius: 4px 0 0 4px;
+    border-radius: 25px 25px 25px 25px;
     flex-grow: 1;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .input-wrapper button {
-    padding: 10px 15px;
+    padding: 15px 25px;
     background-color: #6030b1;
     color: white;
     border: none;
-    border-radius: 0 4px 0;
+    border-radius: 20px 20px 20px;
     cursor: pointer;
+    font-size: 24px;
 }
 
 .input-wrapper button i {
     background-color: transparent;
 }
 
-.img-building {
-    height: 100px;
-    
+.building-logo {
+    width: 600px;    
 }
 
 li.btn-contact {
@@ -112,7 +112,27 @@ li.btn-contact {
     transition: all .35sease;
 }
 
-button.not-loading {
-    margin: 0px 0px 0px 20px;
-    padding: 1px 6px;
+
+/* 
+
+USER.HTML (SECOND PAGE)
+*/
+
+.cinema-img {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-position-x: 50%;
+    background-position-y: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 70;
+    left: 0;
+    bottom: 100;
+    right: 0;
+    z-index: 1;
 }
+
+
