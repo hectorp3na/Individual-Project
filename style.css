@@ -225,6 +225,7 @@ USER.HTML
     color: #333;
     font-weight: 600;
     transition: color 0.3s ease;
+    background-color: transparent;
     
     
     }
@@ -247,7 +248,7 @@ USER.HTML
     display: inline-block;
     padding: 12px 40px;
     border-radius: 50px;
-    background-color: #6030b1;
+    background-color: #6030b1 !important;
     color: #fff !important;
     font-size: 13px;
     font-weight: 700;
@@ -267,6 +268,10 @@ USER.HTML
     position: relative;
     z-index: 2;
     background-color: transparent;
+    }
+
+    .second-page .title {
+        background-color: transparent;
     }
     
     
