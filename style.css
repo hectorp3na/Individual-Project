@@ -121,163 +121,261 @@ USER.HTML
 */
 
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
+    font-family: "Inter", sans-serif;
+    
+    }
+    
+    
+    body {
+    
+    padding-top: 0;
+    
+    }
+    
+    
+    /* Background Image */
+    
+    .overlay {
 
-body {
-    padding-top: 80px;
-}
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assests/myke-simon-atsUqIm3wxo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    }
+    
+    
+    .overlay::before {
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+    
+    }
+    
+    
+    /* Navbar */
+    
+    .navbar {
 
-
-
-/* Navbar */
-.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: #fff;
+    background-color: transparent;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: fixed;
+    position: relative;
     width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
+    z-index: 2;
 
-}
-
-.navlinks {
+    }
+    
+    
+    .logo img {
+    
+    height: 40px;
+    width: auto;
+    }
+    
+    
+    .navlinks {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-.navlinks li {
+    
+    }
+    
+    
+    .navlinks li {
     display: inline-block;
     
-}
-
-.navlinks a {
+    }
+    
+    
+    .navlinks a {
+    
     text-decoration: none;
     color: #333;
     font-weight: 600;
     transition: color 0.3s ease;
-}
-
-.navlinks a.active {
+    
+    }
+    
+    .navlinks a.active {
+    
     color: #6030b1;
-}
 
-.navlinks a:hover {
+    }
+    
+    
+    .navlinks a:hover {
     color: #6030b1;
-}
-
-/* Search Section */
-.second-page {
+    
+    }
+    
+    .btn-contact {
+    
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    background-color: #6030b1;
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.35s ease;
+    
+    }
+    
+    
+    /* Header Section */
+    
+    .second-page {
+    
     text-align: center;
-    padding: 50px 20px;
-
-
-}
-
-.input-wrapp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.input-search {
-    padding: 10px;
-    width: 250px;
-    border: 2px solid #6030b1;
-    border-radius: 5px;
-    outline: none;
-}
-
-.search-btn {
-    background: #6030b1;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.search-btn:hover {
-    background: #4a1f91;
-}
-
-
-/* Background Image */
-
-
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    overflow: visible;
-    background: url('./assests/myke-simon-atsUqIm3wxo-unsplash.jpg');
-
-}
-
-.cinema-img {
+    padding: 80px 20px;
+    position: relative;
+    z-index: 2;
     
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    opacity: 0.3;
+    }
     
     
+    .title {
+    
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #6030b1;
+    margin-bottom: 30px;
+    
+    }
+        
+    
+    /* Search Container */
+    
+    .search-container {
 
-
-}
-
-
-
-.search-container {
     position: relative;
     width: 100%;
     max-width: 500px;
-   }
-   
-   
-   .search-input {
-   width: 100%;
-   padding: 15px 50px 15px 20px;
-   border-radius: 50px;
-   border: 2px solid #e0e0e0;
-   font-size: 16px;
-   outline: none;
-   transition: border-color 0.3s;
-   }
-   
-   
-   .search-input:focus {
-   border-color: #6415ff;
-   }
-   
-   
-   .search-input::placeholder {
-   color: #aaa;
-   }
-   
-   
-   .search-icon {
-   position: absolute;
-   right: 20px;
-   top: 50%;
-   transform: translateY(-50%);
-   color: #6415ff;
-   cursor: pointer;
-   }
-
-
+    margin: 0 auto;
+    
+    }
+    
+    
+    .search-input {
+    
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    border-radius: 50px;
+    border: 2px solid #e0e0e0;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    
+    }
+    
+    
+    .search-input:focus {
+    border-color: #6415ff;
+    
+    }
+    
+    
+    .search-input::placeholder {
+    color: #aaa;
+    
+    }
+    
+    
+    .search-icon {
+    
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6415ff;
+    cursor: pointer;
+    }
+    
+    
+    /* Preserving other styles from your original code if needed */
+    
+    
+    
+    /* Landing page styles */
+    
+    #landing-page {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    
+    
+    .building-logo {
+    width: 600px;
+    
+    }
+    
+    
+    .input-wrapper {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    
+    }
+    
+    
+    .input-wrapper input {
+    
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px 25px 25px 25px;
+    flex-grow: 1;
+    font-size: 18px;
+    
+    }
+    
+    
+    .input-wrapper button {
+    
+    padding: 15px 25px;
+    background-color: #6030b1;
+    color: white;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer; 
+    font-size: 24px;
+    
+    }
+    
+    .input-wrapper button i {
+    background-color: transparent;
+    
+    }
