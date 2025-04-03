@@ -132,9 +132,7 @@ body {
     padding-top: 80px;
 }
 
-.title {
-    color: black;
-}
+
 
 /* Navbar */
 .navbar {
@@ -222,7 +220,7 @@ body {
 .overlay {
     position: absolute;
     width: 100%;
-    height: 50vh;
+    height: 400px;
     overflow: visible;
     background: url('./assests/myke-simon-atsUqIm3wxo-unsplash.jpg');
 
@@ -235,7 +233,9 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: .5;
+    display: block;
+    opacity: 0.3;
+    
     
 
 
