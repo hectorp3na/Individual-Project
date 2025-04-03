@@ -199,6 +199,7 @@ USER.HTML
     
     height: 40px;
     width: auto;
+    background-color: transparent;
     }
     
     
@@ -206,12 +207,14 @@ USER.HTML
     list-style: none;
     display: flex;
     gap: 20px;
+    background-color: transparent;
     
     }
     
     
     .navlinks li {
     display: inline-block;
+    background-color: transparent;
     
     }
     
@@ -223,11 +226,13 @@ USER.HTML
     font-weight: 600;
     transition: color 0.3s ease;
     
+    
     }
     
     .navlinks a.active {
     
     color: #6030b1;
+    background-color: transparent;
 
     }
     
@@ -261,7 +266,7 @@ USER.HTML
     padding: 80px 20px;
     position: relative;
     z-index: 2;
-    
+    background-color: transparent;
     }
     
     
@@ -285,8 +290,8 @@ USER.HTML
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-    
-    }
+    background-color: transparent;
+}
     
     
     .search-input {
@@ -298,7 +303,7 @@ USER.HTML
     font-size: 16px;
     outline: none;
     transition: border-color 0.3s;
-    
+
     }
     
     
@@ -310,7 +315,7 @@ USER.HTML
     
     .search-input::placeholder {
     color: #aaa;
-    
+
     }
     
     
@@ -343,7 +348,7 @@ USER.HTML
     
     .building-logo {
     width: 600px;
-    
+
     }
     
     
@@ -355,7 +360,7 @@ USER.HTML
     max-width: 500px;
     width: 100%;
     position: relative;
-    
+
     }
     
     
@@ -366,7 +371,7 @@ USER.HTML
     border-radius: 25px 25px 25px 25px;
     flex-grow: 1;
     font-size: 18px;
-    
+
     }
     
     
@@ -379,10 +384,10 @@ USER.HTML
     border-radius: 20px 20px 20px 20px;
     cursor: pointer; 
     font-size: 24px;
-    
+
     }
     
     .input-wrapper button i {
     background-color: transparent;
-    
-    }
+
+}
