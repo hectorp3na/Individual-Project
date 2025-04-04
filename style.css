@@ -137,7 +137,7 @@ USER.HTML
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: sans-serif;
     
     }
     
@@ -277,12 +277,12 @@ USER.HTML
     background-color: transparent;
     }
 
-    .second-page .title {
+    .second-page .page--title {
         background-color: transparent;
     }
     
     
-    .title {
+    .page--title {
     
     font-size: 50px;
     text-align: center;
