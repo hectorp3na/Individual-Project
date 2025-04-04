@@ -403,3 +403,7 @@ USER.HTML
     background-color: transparent;
 
 }
+
+.data-container {
+    z-index: 4;
+}
