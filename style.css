@@ -404,7 +404,7 @@ USER.HTML
 
 }
 
-.data-container {
-    z-index: 4;
-    
+#data-container {
+    z-index: 6;
+
 }
