@@ -1,11 +1,13 @@
+
 async function fetchData() {
   try {
-    let response = await fetch(
+    const response = await fetch(
       "https://www.omdbapi.com/?i=tt3896198&apikey=f9f11fce"
     );
-    let data = await response.json();
+    const data = await response.json();
     console.log(data);
-  } catch (error) {
+  } 
+  catch (error) {
     console.error("Error:", error);
     return "Couldn't Fetch Data";
   }
@@ -31,6 +33,8 @@ async function displayData() {
     console.error("Error:", error);
     return "Couldn't Fetch Data";
   }
+  
+
 }
 
 displayData();
