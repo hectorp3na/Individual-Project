@@ -15,10 +15,12 @@ async function fetchData() {
 
 fetchData();
 
+
+
 async function displayData() {
-  try {
+
     const response = await fetch(
-      "https://www.omdbapi.com/?apikey=f9f11fce&s=fast"
+      "https://www.omdbapi.com/?i=tt3896198&apikey=f9f11fce"
     );
     const data = await response.json();
 
@@ -26,15 +28,12 @@ async function displayData() {
     container.innerHTML = `
         <h2>${data.Title}</h2>
         <p><strong>Year:</strong>${data.Year}</p>
-        <p><strong></strong> <img src="https://m.media-amazon.com/images/M/MV5BNWE5MGI3MDctMmU5Ni00YzI2LWEzMTQtZGIyZDA5MzQzNDBhXkEyXkFqcGc@._V1_SX300.jpg" alt="Movie Poster"></p>
+        <img>${data.Poster}</img>
           `;
-  } catch (error) {
-    console.error("Error:", error);
-    return "Couldn't Fetch Data";
-  }
-  
 
-}
+
+  } 
+  
 
 displayData();
 
