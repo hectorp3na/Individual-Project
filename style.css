@@ -405,6 +405,11 @@ USER.HTML
 }
 
 #data-container {
+    position: relative;
     z-index: 6;
 
+}
+
+#data-container img {
+    height: 45vh;
 }
