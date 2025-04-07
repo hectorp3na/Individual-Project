@@ -5,35 +5,41 @@ async function fetchData() {
       "https://www.omdbapi.com/?apikey=f9f11fce&s=fast"
     );
     const data = await response.json();
-    console.log(data);
-  } 
-  catch (error) {
+    return data;
+  } catch (error) {
     console.error("Error:", error);
-    return "Couldn't Fetch Data";
+    return null;
   }
 }
 
-fetchData();
+
 
 
 
 async function displayData() {
 
-    const response = await fetch(
-      "https://www.omdbapi.com/?i=tt3896198&apikey=f9f11fce"
-    );
-    const data = await response.json();
+const data = await fetchData();
+const container = document.getElementById("data-container");
+    
+if (!data || !data.Search || data.Search.length === 0) {
+container.innerHYML = "<p>No results found.</p>";
+return;
+}
 
-    let container = document.getElementById("data-container");
-    container.innerHTML = `
-        <h2>${data.Title}</h2>
-        <p><strong>Year:</strong>${data.Year}</p>
-        <img>${data.Poster}</img>
-          `;
+    // Clear container first
+container.innerHTML = "";
 
-
-  } 
-  
-
+    // Loop through each movie and add to container
+data.Search.forEach((movie) => {
+const movieHTML = `
+<div style="border:1px solid #ccc; margin:10px; padding:10px; max-width:200px;">
+<h3>${movie.Title}</h3>
+<p><strong>Year:</strong> ${movie.Year}</p>
+<img src="${movie.Poster}" alt="${movie.Title}" style="width:100%;">
+</div>
+`;
+container.innerHTML += movieHTML;
+});
+}
 displayData();
 

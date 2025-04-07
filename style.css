@@ -407,7 +407,9 @@ USER.HTML
 #data-container {
     position: relative;
     z-index: 6;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #data-container img {
