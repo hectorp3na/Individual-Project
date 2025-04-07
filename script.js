@@ -2,7 +2,7 @@
 async function fetchData() {
   try {
     const response = await fetch(
-      "https://www.omdbapi.com/?i=tt3896198&apikey=f9f11fce"
+      "https://www.omdbapi.com/?apikey=f9f11fce&s=fast"
     );
     const data = await response.json();
     console.log(data);
@@ -18,7 +18,7 @@ fetchData();
 async function displayData() {
   try {
     const response = await fetch(
-      "https://www.omdbapi.com/?i=tt3896198&apikey=f9f11fce"
+      "https://www.omdbapi.com/?apikey=f9f11fce&s=fast"
     );
     const data = await response.json();
 
