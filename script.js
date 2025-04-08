@@ -26,10 +26,10 @@ container.innerHYML = "<p>No results found.</p>";
 return;
 }
 
-    // Clear container first
+
 container.innerHTML = "";
 
-    // Loop through each movie and add to container
+    
 data.Search.forEach((movie) => {
 const movieHTML = `
 <div style="border:1px solid #ccc; margin:10px; padding:10px; max-width:200px;">
