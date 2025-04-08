@@ -43,3 +43,23 @@ container.innerHTML += movieHTML;
 }
 displayData();
 
+
+
+function debounce(func, delay) {
+    let timeOutID;
+    return function () {
+        const args = arguments;
+        const context = this;
+        clearTimeout(timeOutID);
+        timeOutID = setTimeout(() => func.apply(context, args), delay);
+    };
+}
+
+function performSearch() {
+    const query = document.getElementById("search-input").value;
+    document.getElementById("searchResults").textContent = `${query}`;
+}
+
+document
+.getElementById("search-input")
+.addEventListener("input", debounce(performSearch, 500));
