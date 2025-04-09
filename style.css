@@ -419,5 +419,6 @@ USER.HTML
 }
 
 #data-container img {
-    height: 45vh;
+    height: 40vh;
+    width: 40vh;
 }
