@@ -107,7 +107,7 @@ INDEX.HTML
     width: 600px;    
 }
 
-li.btn-contact {
+li.contact-btn {
     display: flex;
     cursor: pointer;
     max-height: 48px;
@@ -116,9 +116,9 @@ li.btn-contact {
     align-items: center;
     border: 2px #02439f;
     border-radius: 50px;
-    background-color: #02439f;
-    color: #fff !important;
+    background-color: #02439f !important;
     font-size: 20px;
+    color: white;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
