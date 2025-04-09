@@ -47,6 +47,10 @@ INDEX.HTML
     height: 65px;
 }
 
+.not-loading:hover {
+    background-color: #5a84de;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -128,7 +132,7 @@ li.contact-btn {
     align-items: center;
     border: 2px #02439f;
     border-radius: 50px;
-    background-color: #02439f;
+    background-color: #02439f !important;
     font-size: 18px;
     color: white;
    
@@ -361,6 +365,10 @@ USER.HTML
     transform: translateY(-50%);
     color: #02439f;
     cursor: pointer;
+    }
+
+    .search-icon:hover {
+        color: #5a84de;
     }
     
     
