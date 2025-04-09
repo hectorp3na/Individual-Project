@@ -51,7 +51,7 @@ INDEX.HTML
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 50px;
+    padding: 25px 50px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 18px;
@@ -131,7 +131,7 @@ li.contact-btn {
     background-color: #02439f !important;
     font-size: 18px;
     color: white;
-    font-weight: 700;
+   
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: all .35s ease;
