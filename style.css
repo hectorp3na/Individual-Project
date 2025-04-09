@@ -138,7 +138,7 @@ li.contact-btn {
 }
 
 li.contact-btn:hover {
-    background-color: #5a84de
+    background-color: #5a84de !important;
 }
 
 
