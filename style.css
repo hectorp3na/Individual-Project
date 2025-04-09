@@ -27,9 +27,13 @@ INDEX.HTML
     max-width: 730px;
     font-weight: 700;
     line-height: 1.25;
-    color: #6030b1;
+    color: #02439f;
     margin-bottom: 30px;
     display: block;
+}
+
+.description {
+    font-size: 30px;
 }
 
 .logo img {
@@ -50,6 +54,8 @@ INDEX.HTML
 
 .navlinks li {
     list-style: none;
+    font-size: 20px;
+    font-weight: 600 !important;
     cursor: pointer;
     padding: 0 30px;
     font-weight: 500;
@@ -62,7 +68,7 @@ INDEX.HTML
 }
 
 .navlinks li:hover { 
-    color: #6030b1;
+    color: #02439f;
 }
 
 .input-wrapper {
@@ -85,7 +91,7 @@ INDEX.HTML
 
 .input-wrapper button {
     padding: 15px 25px;
-    background-color: #6030b1;
+    background-color: #02439f;
     color: white;
     border: none;
     border-radius: 20px 20px 20px 20px;
@@ -108,15 +114,15 @@ li.btn-contact {
     min-height: 48px;
     padding: 12px 40px;
     align-items: center;
-    border: 2px #5d3eff;
+    border: 2px #02439f;
     border-radius: 50px;
-    background-color: #6030b1;
+    background-color: #02439f;
     color: #fff !important;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    transition: all .35sease;
+    transition: all .35s ease;
 }
 
 
@@ -180,7 +186,7 @@ USER.HTML
     
     /* Navbar */
     
-    .navbar {
+    .navbar-u {
 
     display: flex;
     justify-content: space-between;

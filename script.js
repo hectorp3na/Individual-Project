@@ -36,8 +36,14 @@ async function fetchData(query = "fast") {
   
 
   displayData();
-  
 
+  document.querySelector(".search-input").addEventListener("input", function (e) {
+    const query = e.target.value.trim();
+    if (query.length > 2) {
+        displayData(query);
+    }
+  });
+  
   document.getElementById("search-icon").addEventListener("click", function () {
     const searchText = document.getElementById("search-input").value;
     displayData(searchText);
@@ -58,6 +64,7 @@ async function fetchData(query = "fast") {
   document.getElementById("search-input").addEventListener("input", debounce(function () {
     const searchText = document.getElementById("search-input").value;
     displayData(searchText);
-  }, 500));
+  }, 500)
+);
   
   
