@@ -128,13 +128,17 @@ li.contact-btn {
     align-items: center;
     border: 2px #02439f;
     border-radius: 50px;
-    background-color: #02439f !important;
+    background-color: #02439f;
     font-size: 18px;
     color: white;
    
     letter-spacing: 1px;
     text-transform: uppercase;
-    transition: all .35s ease;
+    transition: none .35s ease;
+}
+
+li.contact-btn:hover {
+    background-color: #5a84de
 }
 
 
