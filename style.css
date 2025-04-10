@@ -361,7 +361,7 @@ USER.HTML
     
     position: absolute;
     right: 20px;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     color: #02439f;
     cursor: pointer;
@@ -440,6 +440,8 @@ USER.HTML
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 1rem;
+
 }
 
 #data-container img {
