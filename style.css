@@ -446,3 +446,24 @@ USER.HTML
     height: 40vh;
     width: 40vh;
 }
+
+
+
+.movie__header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: transparent;
+}
+
+.section__title {
+    margin-bottom: 0;
+    background: transparent;
+
+}
+
+.blue {
+    background: transparent;
+    color: #02439f;
+}
