@@ -45,12 +45,24 @@
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
+          <div class="movie__header">
+            <h2 class="section__title">
+                All <span class="blue">Movies:</span>
+            </h2>
+            <select id="filter" onchange="filterMovies(event)">
+                <option value="" disabled selected>Sort</option>
+                <option value="Oldest_To_Newest">Oldest to Newest</option>
+                <option value="Newest_To_Oldest">Newest to Oldest</option>
+            </select>
+          </div>
+          <div class="movies">
+
+          </div>
           
-          <ul id="results"></ul>
         </div>
       </section>
       <div id="data-container"></div>
-      
+
 
     </div>
 

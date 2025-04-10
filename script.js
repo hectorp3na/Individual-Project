@@ -33,7 +33,38 @@ async function fetchData(query = "fast") {
       container.innerHTML += movieHTML;
     });
   }
-  
+
+
+
+// Filter Movies
+
+
+function renderMovies(filter) {
+    const moviesWrapper = document.querySelector(".movies");
+
+    const movies = getMovies();
+
+    if (filter === "Oldest_To_Newest") {
+     console.log(filter)
+     const filteredMovies = movies.sort((a,b) => a.Year - b.Year);
+     console.log(filteredMovies)
+     }
+    }
+
+
+function filterMovies(event) {
+ renderMovies(event.target.value);
+    }
+
+
+setTimeout(() => {
+    renderMovies();
+})
+
+
+
+
+// Display Data
 
   displayData();
 
@@ -67,4 +98,5 @@ async function fetchData(query = "fast") {
   }, 500)
 );
   
-  
+
+
