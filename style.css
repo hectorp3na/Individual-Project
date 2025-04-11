@@ -55,7 +55,7 @@ INDEX.HTML
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 50px;
+    padding: 15px 30px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 18px;
@@ -137,7 +137,7 @@ li.contact-btn {
     color: white;
    
     letter-spacing: 1px;
-    text-transform: uppercase;
+
     transition: none .35s ease;
 }
 
@@ -265,7 +265,7 @@ USER.HTML
     
     color: #02439f;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 18px;
 
     }
     
@@ -282,7 +282,7 @@ USER.HTML
     border-radius: 50px;
 
     color: #02439f  !important;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
 
@@ -361,7 +361,7 @@ USER.HTML
     
     position: absolute;
     right: 20px;
-    top: 30%;
+    top: 50%;
     transform: translateY(-50%);
     color: #02439f;
     cursor: pointer;
@@ -462,10 +462,18 @@ USER.HTML
 .section__title {
     margin-bottom: 0;
     background: transparent;
+    font-size: 32px;
 
 }
 
 .blue {
     background: transparent;
     color: #02439f;
+}
+
+#filter {
+    color: white;
+    background-color: #02439f;
+    border-radius: 50px;
+    padding: 5px;
 }
