@@ -118,7 +118,10 @@ async function fetchData(query = "fast") {
   }
 }
 
-async function displayData(query = "fast") {
+async function displayData(query) {
+  if (!query) {
+    return; // Don't fetch if the query is empty
+  }
   const data = await fetchData(query);
   const container = document.getElementById("data-container");
 
@@ -129,7 +132,7 @@ async function displayData(query = "fast") {
   }
 
   movieData = data.Search;
-  renderMovies(); // render initially without sorting
+  renderMovies();
 }
 
 function renderMovies(filter = "") {
@@ -156,27 +159,31 @@ function renderMovies(filter = "") {
   });
 }
 
-// Filter event
+
 function filterMovies(event) {
   const filterValue = event.target.value;
   renderMovies(filterValue);
 }
 
-// Search input
-document.querySelector(".search-input").addEventListener("input", function (e) {
-  const query = e.target.value.trim();
-  if (query.length > 2) {
-    displayData(query);
+// Event listener for the search button click
+document.querySelector(".search-icon").addEventListener("click", function () {
+  const searchText = document.querySelector(".search-input").value.trim();
+  if (searchText) {
+    displayData(searchText);
   }
 });
 
-// Search icon click
-document.querySelector(".search-icon").addEventListener("click", function () {
-  const searchText = document.querySelector(".search-input").value;
-  displayData(searchText);
+// Event listener for Enter key press in the search input
+document.querySelector(".search-input").addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    const searchText = document.querySelector(".search-input").value.trim();
+    if (searchText) {
+      displayData(searchText);
+    }
+  }
 });
 
-// Debounce helper
+
 function debounce(func, delay) {
   let timeoutID;
   return function () {
@@ -187,15 +194,16 @@ function debounce(func, delay) {
   };
 }
 
-// Optional debounce on input
-document.querySelector(".search-input").addEventListener(
-  "input",
-  debounce(function () {
-    const searchText = document.querySelector(".search-input").value;
-    if (searchText.length > 2) {
-      displayData(searchText);
-    }
-  }, 500)
-);
-// Initial load
+// Remove the input event listener that triggers on every keystroke
+// document.querySelector(".search-input").addEventListener(
+//   "input",
+//   debounce(function () {
+//     const searchText = document.querySelector(".search-input").value;
+//     if (searchText.length > 2) {
+//       displayData(searchText);
+//     }
+//   }, 500)
+// );
+
+// Initial display (you can keep this or remove it if you only want to show movies after a search)
 displayData();
